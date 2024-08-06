@@ -1,7 +1,5 @@
 const getTagRenderer = (teg) => {
-    return (string) => {
-        return `<${teg}>string</${teg}>`;
-    }
+    return (string) => `<${teg}>${string}</${teg}>`;
 }
 
 const renderH1 = getTagRenderer('h1');
